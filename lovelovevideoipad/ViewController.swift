@@ -14,9 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        let logo = UIImage(named: "navblue.png")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
+        let img = UIImage(named: "navbarblue")
+        navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: .Default)
     }
 
     override func didReceiveMemoryWarning() {
