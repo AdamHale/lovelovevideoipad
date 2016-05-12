@@ -2,13 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hng-eF-GHS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Video View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VideoView" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,62 +17,85 @@
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-Lg-YmF">
-                                <rect key="frame" x="0.0" y="568" width="256" height="200"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-rj-DOc">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-rj-DOc">
                                 <rect key="frame" x="0.0" y="360" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BvG-aQ-szC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJJ-52-Pud">
                                 <rect key="frame" x="0.0" y="152" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4g3-BT-nBA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJD-VV-3Yx">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJD-VV-3Yx">
                                 <rect key="frame" x="264" y="152" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fV-XB-bdt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wl-Sb-9iN">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wl-Sb-9iN">
                                 <rect key="frame" x="264" y="360" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZl-ho-bhG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmZ-6b-3DR">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmZ-6b-3DR">
                                 <rect key="frame" x="264" y="568" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPK-cE-faE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-DR-7He">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-DR-7He">
                                 <rect key="frame" x="768" y="568" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8or-A0-4ZR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-i6-Xhc">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-i6-Xhc">
                                 <rect key="frame" x="768" y="360" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="IZl-Ek-qBp" kind="show" id="tWS-xm-tOI"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzu-sw-aWC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57e-1x-lgq">
                                 <rect key="frame" x="768" y="152" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-31-Y0n">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-31-Y0n">
                                 <rect key="frame" x="504" y="568" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aB9-iT-BZ5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-Ul-uFd">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-Ul-uFd">
                                 <rect key="frame" x="504" y="360" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDT-pa-EZW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-Lh-aDb">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-Lh-aDb">
                                 <rect key="frame" x="504" y="152" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvq-Gh-WBK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wml-Jv-jAs">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wml-Jv-jAs">
                                 <rect key="frame" x="768" y="152" width="256" height="200"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="EtY-o1-21k" kind="show" id="fVC-r6-cMx"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0E7-HM-9wT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="lgV-Ln-61m">
@@ -84,20 +107,32 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otq-Lg-YmF">
+                                <rect key="frame" x="0.0" y="568" width="256" height="200"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cn-wQ-1Jl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nf1-Oz-C6e"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="IZl-Ek-qBp" kind="show" identifier="NoAirplay" id="JPT-92-tcL"/>
+                        <segue destination="EtY-o1-21k" kind="show" identifier="VideoDetail" id="P2a-8r-FAw"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2500" y="688"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View-->
         <scene sceneID="oJD-Ya-NWY">
             <objects>
-                <viewController id="EtY-o1-21k" customClass="ViewController" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EtY-o1-21k" customClass="DetailView" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4QQ-gW-Hlp"/>
                         <viewControllerLayoutGuide type="bottom" id="z3i-pC-5dy"/>
@@ -109,80 +144,44 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="RLc-vz-WEM">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4z-2R-rR5">
-                                <rect key="frame" x="209" y="95" width="660" height="175"/>
-                                <mutableString key="text">
-The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-AT-M8P">
-                                <rect key="frame" x="209" y="300" width="672" height="186"/>
-                                <mutableString key="text">
-The process text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The brief" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqM-M4-uAa">
-                                <rect key="frame" x="214" y="95" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Process" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJI-N7-61R">
-                                <rect key="frame" x="214" y="300" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Sx-kb-VsG">
-                                <rect key="frame" x="214" y="504" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Video title" textAlignment="center" minimumFontSize="18" background="bluebar" disabledBackground="LOVELOVE LOGO Black [Converted]" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-pW-QQa">
-                                <rect key="frame" x="404" y="17" width="235" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-sf-dYU">
                                 <rect key="frame" x="892" y="28" width="112" height="30"/>
                                 <state key="normal" title="Play video"/>
+                                <connections>
+                                    <action selector="videoPlay:" destination="EtY-o1-21k" eventType="touchUpInside" id="mp6-qv-BCq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-eY-rdc">
-                                <rect key="frame" x="0.0" y="376" width="216" height="197"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-9Y-TYd">
-                                <rect key="frame" x="0.0" y="222" width="216" height="186"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itu-UN-3Ga">
-                                <rect key="frame" x="0.0" y="571" width="216" height="197"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INx-vi-OjY">
-                                <rect key="frame" x="209" y="498" width="672" height="186"/>
-                                <mutableString key="text">
-The result text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</mutableString>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4z-2R-rR5">
+                                <rect key="frame" x="182" y="137" width="660" height="465"/>
+                                <string key="text">
+The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzl-1g-Yao">
+                                <rect key="frame" x="228" y="17" width="568" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="videoDescription" destination="e4z-2R-rR5" id="mYs-Ka-ksl"/>
+                        <outlet property="videoTitle" destination="hzl-1g-Yao" id="23n-Mk-obz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1v-99-gZn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5052" y="654"/>
+            <point key="canvasLocation" x="3824" y="872"/>
         </scene>
-        <!--View Controller-->
+        <!--No Airplay-->
         <scene sceneID="GRO-ZK-bS6">
             <objects>
-                <viewController id="IZl-Ek-qBp" customClass="ViewController" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IZl-Ek-qBp" customClass="NoAirplay" customModule="lovelovevideoipad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1hC-6t-Q8Q"/>
                         <viewControllerLayoutGuide type="bottom" id="nCh-ZY-5HS"/>
@@ -191,65 +190,56 @@ The result text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-E5-yVk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-E5-yVk">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj5-M4-5xK">
-                                <rect key="frame" x="202" y="548" width="672" height="186"/>
-                                <mutableString key="text">
-The result text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</mutableString>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H33-3s-ezY" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="275" y="82" width="474" height="266"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H33-3s-ezY" secondAttribute="height" multiplier="16:9" id="LaW-Wu-CEz"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh9-4z-D8L">
+                                <rect key="frame" x="182" y="373" width="660" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="043-hZ-dvi"/>
+                                    <constraint firstAttribute="width" constant="660" id="nwv-Ug-e0s"/>
+                                </constraints>
+                                <string key="text">
+The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The brief" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C57-DH-e36">
-                                <rect key="frame" x="207" y="356" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s7R-wy-z2g">
-                                <rect key="frame" x="207" y="553" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Video title" textAlignment="center" minimumFontSize="18" background="bluebar" disabledBackground="LOVELOVE LOGO Black [Converted]" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-OJ-u7R">
-                                <rect key="frame" x="395" y="20" width="235" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGw-j1-Uki">
+                                <rect key="frame" x="221" y="11" width="583" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOVELOVE LOGO Black [Converted]" translatesAutoresizingMaskIntoConstraints="NO" id="e6B-Is-kBh">
-                                <rect key="frame" x="295" y="98" width="435" height="232"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8W-gw-URk">
-                                <rect key="frame" x="0.0" y="571" width="199" height="197"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79G-AC-RHR">
-                                <rect key="frame" x="0.0" y="222" width="199" height="171"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-tq-uQH">
-                                <rect key="frame" x="0.0" y="378" width="199" height="197"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh9-4z-D8L">
-                                <rect key="frame" x="202" y="356" width="660" height="175"/>
-                                <mutableString key="text">
-The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit, velit ut luctus imperdiet, tellus est tristique magna, nec porttitor tortor ex sit amet dolor. Curabitur consectetur arcu vestibulum, maximus urna non, faucibus enim. Nam bibendum nisl at aliquet convallis. Pellentesque eget eros eget purus ullamcorper ultrices ut in ipsum. Donec mattis nibh a tempor iaculis. Proin volutpat pulvinar sapien sit amet pharetra. Pellentesque quis venenatis sem. Mauris dictum mi ultricies, finibus nibh vel, commodo neque. Curabitur imperdiet turpis nec arcu bibendum pharetra. Etiam ultricies augue vel venenatis interdum. Sed in pharetra odio. Fusce sapien lectus, tincidunt vel tortor et, vehicula viverra sapien. Nulla vitae metus et leo consequat mattis a ut libero. Sed mollis ex sed varius interdum</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H33-3s-ezY" firstAttribute="top" secondItem="DiE-E5-yVk" secondAttribute="bottom" constant="18" id="5VF-B6-Pxa"/>
+                            <constraint firstItem="gh9-4z-D8L" firstAttribute="leading" secondItem="ouY-OR-AMa" secondAttribute="leading" constant="202" id="6ZS-fM-XcY"/>
+                            <constraint firstItem="DiE-E5-yVk" firstAttribute="leading" secondItem="ouY-OR-AMa" secondAttribute="leading" id="E7R-ha-szH"/>
+                            <constraint firstItem="H33-3s-ezY" firstAttribute="width" secondItem="H33-3s-ezY" secondAttribute="height" multiplier="16:9" id="cYG-di-xNw"/>
+                            <constraint firstItem="DiE-E5-yVk" firstAttribute="top" secondItem="1hC-6t-Q8Q" secondAttribute="bottom" id="pDp-lM-7bQ"/>
+                            <constraint firstAttribute="trailing" secondItem="DiE-E5-yVk" secondAttribute="trailing" id="skS-aW-kDR"/>
+                            <constraint firstItem="H33-3s-ezY" firstAttribute="width" secondItem="H33-3s-ezY" secondAttribute="height" multiplier="16:9" id="vFt-LO-8Ci"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="videoDescription" destination="gh9-4z-D8L" id="f0P-9K-NuD"/>
+                        <outlet property="videoPlayer" destination="H33-3s-ezY" id="KZd-NF-zk0"/>
+                        <outlet property="videoTitle" destination="vGw-j1-Uki" id="DCI-bo-b3p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05m-IS-Iy1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3890" y="1264"/>
+            <point key="canvasLocation" x="2267" y="1574"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VYg-SF-sUU">
@@ -318,7 +308,7 @@ Please select a mode</string>
                     <navigationBar key="navigationBar" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="J1v-zP-rYM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.46147903509999999" green="0.26781468590000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -333,11 +323,10 @@ Please select a mode</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbj-lK-1Ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="1054"/>
+            <point key="canvasLocation" x="222" y="725"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LOVELOVE LOGO Black [Converted]" width="858" height="283"/>
         <image name="blueback-1" width="2048" height="1536"/>
         <image name="bluebar" width="2048" height="87"/>
         <image name="logo2" width="858" height="283"/>

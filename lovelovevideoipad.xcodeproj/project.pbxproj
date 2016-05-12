@@ -18,6 +18,7 @@
 		EB304BF01CE4C3CD0058437D /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB304BEF1CE4C3CD0058437D /* VideoView.swift */; settings = {ASSET_TAGS = (); }; };
 		EB304BF21CE4C3DC0058437D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB304BF11CE4C3DC0058437D /* DetailView.swift */; settings = {ASSET_TAGS = (); }; };
 		EB304BF41CE4C3F40058437D /* NoAirplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB304BF31CE4C3F40058437D /* NoAirplay.swift */; settings = {ASSET_TAGS = (); }; };
+		EB304BF81CE4D2140058437D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB304BF71CE4D2140058437D /* Video.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EB304BEF1CE4C3CD0058437D /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		EB304BF11CE4C3DC0058437D /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EB304BF31CE4C3F40058437D /* NoAirplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoAirplay.swift; sourceTree = "<group>"; };
+		EB304BF71CE4D2140058437D /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		FE02EBE4965966BAD717EF68 /* Pods-lovelovevideoipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lovelovevideoipad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lovelovevideoipad/Pods-lovelovevideoipad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				5BAE43001CE3229A0053F40E /* Assets.xcassets */,
 				5BAE43021CE3229A0053F40E /* LaunchScreen.storyboard */,
 				5BAE43051CE3229A0053F40E /* Info.plist */,
+				EB304BF71CE4D2140058437D /* Video.swift */,
 			);
 			path = lovelovevideoipad;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB304BF41CE4C3F40058437D /* NoAirplay.swift in Sources */,
+				EB304BF81CE4D2140058437D /* Video.swift in Sources */,
 				EB304BF01CE4C3CD0058437D /* VideoView.swift in Sources */,
 				EB304BF21CE4C3DC0058437D /* DetailView.swift in Sources */,
 				5BAE42FC1CE3229A0053F40E /* ViewController.swift in Sources */,

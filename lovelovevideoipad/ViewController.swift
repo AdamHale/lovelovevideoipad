@@ -7,21 +7,70 @@
 //
 
 import UIKit
+import YouTubePlayer
+
+
 
 class ViewController: UIViewController {
+    
+    var secondWindow : UIWindow?
+    var secondScreenView : UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setupScreen()
     
         let img = UIImage(named: "navbarblue")
         navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: .Default)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setupScreen(){
+        if UIScreen.screens().count > 1 {
+            //find the second screen (the 'as! UIScreen' is not needed in Xcode 7 and above)
+            let secondScreen = UIScreen.screens()[1]
+            
+            //set up a window for the screen using the screens pixel dimensions
+            secondWindow = UIWindow(frame: secondScreen.bounds)
+            
+            //tell the window which screen to use
+            secondWindow?.screen = secondScreen
+            
+            //set the dimensions for the view for the external screen so it fills the screen
+            secondScreenView = UIView(frame: secondWindow!.frame)
+            
+            //add the view to the second screens window
+            secondWindow?.addSubview(secondScreenView!)
+            
+            //unhide the window
+            secondWindow?.hidden = false
+            
+            //customised the view
+            secondScreenView!.backgroundColor = UIColor.blackColor()
+            
+            
+            videoPlayer.frame = secondScreenView!.bounds
+            
+            let width = secondScreenView!.bounds.size.width
+            let height = secondScreenView!.bounds.size.height
+            
+            
+            
+            let myImage = UIImage(named: "logoLight.png")
+            let myImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+            myImageView.image = myImage
+            
+            secondScreenView!.addSubview(myImageView)
+            
+        }
+    }
+    
 
 
 }
