@@ -10,7 +10,9 @@ import UIKit
 import MediaPlayer
 import YouTubePlayer
 
-var videoPlayer = YouTubePlayerView(frame: UIScreen.screens()[1].bounds)
+//let playerFrame =
+
+var videoPlayer = YouTubePlayerView(frame: CGRect(x: 0, y: 0, width: 1280, height: 720))
 
 class VideoView: UIViewController {
     

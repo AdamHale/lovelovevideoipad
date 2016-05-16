@@ -121,8 +121,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <segue destination="IZl-Ek-qBp" kind="show" identifier="NoAirplay" id="JPT-92-tcL"/>
                         <segue destination="EtY-o1-21k" kind="show" identifier="VideoDetail" id="P2a-8r-FAw"/>
+                        <segue destination="IZl-Ek-qBp" kind="show" identifier="NoAirplay" id="6bB-Gw-J7w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
