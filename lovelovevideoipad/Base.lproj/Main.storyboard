@@ -256,15 +256,10 @@ The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing 
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueback-1" translatesAutoresizingMaskIntoConstraints="NO" id="nYO-q0-yc6">
                                 <rect key="frame" x="0.0" y="-64" width="1024" height="832"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-wg-vy8">
-                                <rect key="frame" x="427" y="562" width="175" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Scope Mode"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rop-2P-le4">
-                                <rect key="frame" x="425" y="512" width="175" height="30"/>
+                                <rect key="frame" x="425" y="507" width="175" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Portfolio Mode"/>
+                                <state key="normal" title="Portfolio"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="gOM-do-KOC"/>
                                 </connections>
@@ -280,12 +275,17 @@ The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing 
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br7-0Z-EML">
                                 <rect key="frame" x="5" y="390" width="1019" height="128"/>
-                                <string key="text">Welcome to the Love Love Films app! 
+                                <string key="text">Welcome to the Love Love Films app 
 Please select a mode</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-wg-vy8">
+                                <rect key="frame" x="427" y="562" width="175" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Scope"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
