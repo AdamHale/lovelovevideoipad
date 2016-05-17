@@ -14,8 +14,6 @@ class NoAirplay: UIViewController {
     
     var video: Video!
     var currentScreens = 0
-    let videos = buildVideos()
-    var sender: VideoView!
     
     
     @IBOutlet var videoPlayer: YouTubePlayerView!
@@ -34,7 +32,7 @@ class NoAirplay: UIViewController {
         super.viewDidLoad()
 //        currentScreens = sender.tag!
         
-        videoPlayer.loadVideoID(videos[currentScreens].id)
+        videoPlayer.loadVideoID(video.id)
         
         videoTitle.text = video.title
         videoDescription.text = video.description

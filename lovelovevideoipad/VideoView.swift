@@ -55,7 +55,9 @@ class VideoView: UIViewController {
         
         if segue.identifier == "NoAirplay" {
             let vc = segue.destinationViewController as! NoAirplay
-            vc.video = sender as! Video
+            vc.video = videos[currentScreens
+            ]
+            
         }
     }
     
