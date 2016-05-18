@@ -171,13 +171,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="RLc-vz-WEM">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-sf-dYU">
-                                <rect key="frame" x="892" y="28" width="112" height="30"/>
-                                <state key="normal" title="Play video"/>
-                                <connections>
-                                    <action selector="videoPlay:" destination="EtY-o1-21k" eventType="touchUpInside" id="mp6-qv-BCq"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4z-2R-rR5">
                                 <rect key="frame" x="182" y="137" width="660" height="465"/>
                                 <string key="text">
@@ -191,6 +184,14 @@ The brief text will go here. Lorem ipsum dolor sit amet, consectetur adipiscing 
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-sf-dYU">
+                                <rect key="frame" x="456" y="99" width="112" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="▹"/>
+                                <connections>
+                                    <action selector="videoPlay:" destination="EtY-o1-21k" eventType="touchUpInside" id="mp6-qv-BCq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
