@@ -75,13 +75,6 @@
                                             <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCx-nD-DYk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-AA-XzN">
-                                        <rect key="frame" x="1060" y="436" width="256" height="200"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gt2-ge-ShJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-i6-Xhc">
                                         <rect key="frame" x="801" y="228" width="254" height="200"/>
                                         <state key="normal" title="Button" image="cisco"/>
@@ -103,9 +96,9 @@
                                             <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0E7-HM-9wT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-31-Y0n">
-                                        <rect key="frame" x="524" y="436" width="256" height="200"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKS-31-Y0n">
+                                        <rect key="frame" x="543" y="436" width="257" height="200"/>
+                                        <state key="normal" title="Button" image="bournemouthTouism"/>
                                         <connections>
                                             <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aB9-iT-BZ5"/>
                                         </connections>
@@ -131,11 +124,18 @@
                                             <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="405-kg-ICD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-DR-7He">
-                                        <rect key="frame" x="788" y="436" width="256" height="200"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-DR-7He">
+                                        <rect key="frame" x="801" y="435" width="257" height="200"/>
+                                        <state key="normal" title="Button" image="dorsetCouncil"/>
                                         <connections>
                                             <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8or-A0-4ZR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-AA-XzN">
+                                        <rect key="frame" x="1062" y="436" width="256" height="200"/>
+                                        <state key="normal" title="Button" image="bespoke"/>
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gt2-ge-ShJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -350,17 +350,20 @@ Please select a mode</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbj-lK-1Ya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="725"/>
+            <point key="canvasLocation" x="134" y="673"/>
         </scene>
     </scenes>
     <resources>
         <image name="BCD" width="256" height="200"/>
         <image name="Linsar" width="256" height="200"/>
+        <image name="bespoke" width="256" height="200"/>
         <image name="blueback-1" width="2048" height="1536"/>
         <image name="bluebar" width="2048" height="87"/>
+        <image name="bournemouthTouism" width="256" height="200"/>
         <image name="carryPotty" width="256" height="200"/>
         <image name="cisco" width="256" height="200"/>
         <image name="creditPlus" width="256" height="200"/>
+        <image name="dorsetCouncil" width="256" height="200"/>
         <image name="inYourHead" width="256" height="200"/>
         <image name="iveImproved" width="256" height="200"/>
         <image name="logo2" width="858" height="283"/>
